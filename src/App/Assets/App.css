@@ -36,3 +36,41 @@
     transform: rotate(360deg);
   }
 }
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #61dafb;
+}
+
+.Link:link {
+  color: #fff;
+  font-size: 1.6rem;
+  line-height: 1.6rem;
+  text-decoration: none;
+}
+.Link:visited {
+  color: #fff;
+}
+.Link:hover {
+  color: yellow;
+}
+.Link:active {
+  color: teal;
+}
+
+.Link {
+  display:block;
+  padding: 8px 16px;
+}
+
+.activeRoute {
+  background-color: yellow;
+  border-bottom: 0.4rem solid teal;
+  cursor: not-allowed;
+}
