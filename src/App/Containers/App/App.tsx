@@ -18,6 +18,7 @@ export class App extends React.Component {
           <main>
             <Switch>
                 <Route path = "/" component={Home} exact />
+                <Route path = "//" component={Home} exact />
                 <Route path = "/about" component={About} />
             </Switch>
           </main>

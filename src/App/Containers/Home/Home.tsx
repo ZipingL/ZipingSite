@@ -1,5 +1,5 @@
 // @ts-ignore
-import logo from "../../logo.svg";
+import logo from "../../Assets/linkedin3.png";
 import React from "react";
 
 export class Home extends React.Component {
