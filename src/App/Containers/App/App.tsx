@@ -16,11 +16,13 @@ export class App extends React.Component {
     return(
         <div className="App">
           <main>
-            <Switch>
-                <Route path = "/" component={Home} exact />
-                <Route path = "//" component={Home} exact />
-                <Route path = "/about" component={About} />
-            </Switch>
+            <BrowserRouter>
+                <Switch>
+                    <Route path = "/" component={Home} exact />
+                    <Route path = "//" component={Home} exact />
+                    <Route path = "/about" component={About} />
+                </Switch>
+            </BrowserRouter>
           </main>
         </div>
     );

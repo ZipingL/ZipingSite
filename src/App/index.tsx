@@ -1,21 +1,21 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
-import {BrowserRouter} from "react-router-dom";
 import './index.css';
-import App from './Containers/App/App';
 import * as serviceWorker from './serviceWorker';
-import {Navbar} from "./Containers/Navbar/Navbar"
+import {registerApplication, start} from 'single-spa'
 
-
-ReactDOM.render(
-  <React.StrictMode>
-      <BrowserRouter>
-          <Navbar />
-          <App />
-      </BrowserRouter>
-  </React.StrictMode>,
-  document.getElementById('root')
+registerApplication(
+    'app',
+    () => import('./Containers/App/App.spa'),
+    (location) => true
 );
+
+registerApplication(
+    'navBar',
+    () => import('./Containers/Navbar/Nabar.spa'),
+    (location)=> true
+);
+
+start();
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
