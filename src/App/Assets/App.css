@@ -1,5 +1,7 @@
-.App {
-  text-align: center;
+body {
+  background-color: #282c34;
+  min-height: 400px;
+  margin-bottom: 100px;
 }
 
 .App-logo {
@@ -13,15 +15,19 @@
   }
 }
 
-.App-header {
+.App {
   background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
+  min-width: min-content;
+  max-width: 1000px;
+  align-self: center;
+  margin: 0 auto;
 }
 
 .App-link {
@@ -38,6 +44,18 @@
 }
 
 .nav-bar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+.footer-links {
   display: flex;
   flex-direction: row;
   width: 100%;
@@ -46,7 +64,28 @@
   margin: 0;
   padding: 0;
   background-color: #61dafb;
+  justify-items: center;
+  align-items: center;
+  float: right;
 }
+
+.Link {
+  float: right;
+}
+
+.nav-bar-links {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 100%;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  background-color: #61dafb;
+  font-size: 100%;
+  text-align: center;
+}
+
 
 .Link:link {
   color: #fff;
@@ -61,12 +100,13 @@
   color: yellow;
 }
 .Link:active {
-  color: teal;
+  color: rgb(255, 47, 175);
 }
 
 .Link {
   display:block;
   padding: 8px 16px;
+  font-size: inherit;
 }
 
 .activeRoute {

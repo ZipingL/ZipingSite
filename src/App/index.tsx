@@ -15,6 +15,14 @@ registerApplication(
     (location)=> true
 );
 
+
+registerApplication(
+    'footer',
+    () => import('./Containers/Footer/Footer.spa'),
+    (location)=> true
+);
+
+
 start();
 
 // If you want your app to work offline and load faster, you can change
