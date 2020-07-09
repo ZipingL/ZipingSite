@@ -1,6 +1,6 @@
 // @ts-ignore
 import React from "react";
-import {BrowserRouter, Link} from "react-router-dom";
+import {BrowserRouter, Link, NavLink} from "react-router-dom";
 
 
 export class Navbar extends React.Component {
@@ -9,8 +9,8 @@ export class Navbar extends React.Component {
             <nav className='nav-bar'>
                 <div className='nav-bar-links'>
                     <BrowserRouter>
-                        <Link className='Link' to="/">Home </Link>
-                        <Link className='Link' to="/about">About </Link>
+                        <NavLink exact className='Link' activeClassName='LinkActive' to="/">Home </NavLink>
+                        <NavLink className='Link' activeClassName='LinkActive' to="/about">About </NavLink>
                     </BrowserRouter>
                 </div>
             </nav>

@@ -7,10 +7,22 @@ body {
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  align-self: center;
+}
+
+.About-logo {
+  height: 40vmin;
+  pointer-events: none;
+  scale: 30%;
+}
+
+.about-headshot {
+  float: left;
 }
 
 @media (prefers-reduced-motion: no-preference) {
-  .App-logo {
+  .App-logo,
+  .About-logo {
     animation: App-logo-spin infinite 20s linear;
   }
 }
@@ -20,7 +32,6 @@ body {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: left;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -99,9 +110,6 @@ body {
 .Link:hover {
   color: yellow;
 }
-.Link:active {
-  color: rgb(255, 47, 175);
-}
 
 .Link {
   display:block;
@@ -109,8 +117,8 @@ body {
   font-size: inherit;
 }
 
-.activeRoute {
-  background-color: yellow;
+.LinkActive {
+  background-color: blue;
   border-bottom: 0.4rem solid teal;
   cursor: not-allowed;
 }

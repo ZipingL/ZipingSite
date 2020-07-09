@@ -14,6 +14,10 @@ render() {
             in my spare time. Therefore, I'm learning react and building my own website! On and not to 
             mention I'm also using single-spa as well! 
         </p>
+        <p>
+                    Not much to see yet. Follow my website progress on{' '}
+                    <a href="https://github.com/ZipingL/ZipingSite">Github</a>
+                </p>
         <h2>Who am I?</h2>
         <p>
             Not much to say here. Born in China. Came to the States when I was four years old. I've lived
