@@ -15,9 +15,43 @@ body {
   pointer-events: none;
   scale: 30%;
 }
+.about-main-details {
+  height: 40vmin;
+  display: inline-block;
+  vertical-align: middle;
+  justify-content: left;
+}
 
+.about-articles {
+  justify-content: left;
+}
 .about-headshot {
   float: left;
+}
+
+.clear {clear: both;}
+
+.about-title {
+  float: right;
+  margin-top: 100px;
+}
+
+section:first-child {
+	border-top: 0;
+}
+
+section:last-child {
+	padding: 20px 0 10px;
+}
+
+.sectionTitle {
+	float: left;
+	width: 25%;
+}
+
+.sectionContent {
+	float: right;
+	width: 72.5%;
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -37,7 +71,6 @@ body {
   color: white;
   min-width: min-content;
   max-width: 1000px;
-  align-self: center;
   margin: 0 auto;
 }
 
@@ -118,7 +151,7 @@ body {
 }
 
 .LinkActive {
-  background-color: blue;
+  background-color: violet;
   border-bottom: 0.4rem solid teal;
   cursor: not-allowed;
 }
